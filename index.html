@@ -11,6 +11,7 @@
 </head>
 <body>
 <article class="NFT-card__container">
+  <img class="NFT-card__main-image" src="images/image-equilibrium.jpg" alt="Awesome image of transparent cube reflecting various colors">
   <h1 class="NFT-card__title">
     Equilibrium #3429
   </h1>
@@ -18,17 +19,23 @@
     Our Equilibrium collection promotes balance and calm.
   </p>
   <!-- the <i> tag is commonly used for icons, thats why im implementing it here -->
-  <i class="NFT-card__ETH-icon" data-icon="ETH-icon">
-    0.041 ETH
-  </i>
- <i class="NFT-card__Time-icon" data-icon="Time-icon">
-  3 days left
- </i>
+    <!-- nevermind, the <i> tag is incorrect, better to use span -->
+      <div class="NFT-card__icon-flex-group">
+        <span class="NFT-card__ETH-icon" data-icon="ETH-icon">
+          0.041 ETH
+        </span>
+       <span class="NFT-card__Time-icon" data-icon="Time-icon">
+        3 days left
+       </span>
+      </div>
  <!-- The <hr> tag creates a horizontal line -->
  <hr class="NFT-card__line-break">
+ <div class="NFT-card__attribution-flex-group">
+  <img class="NFT-card__attribution-image" src="images/image-avatar.png" width="30px"></img>
   <p class="NFT-card__attribution">
     Creation of <p class="NFT-card__attribution-name">Jules Wyvern</p>
   </p>
+ </div>
 </article>
 </body>
 </html>
