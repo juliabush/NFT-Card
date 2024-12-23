@@ -103,15 +103,29 @@ article * {
     flex-direction: row;
     justify-content: space-between;
 }
-.NFT-card__ETH-icon {
+.NFT-card__ETH-icon-description {
+  margin: 0;
+  position:relative;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.NFT-card__ETH-description {
     color: var(--clr-ETH-icon-brightblue);
     font-weight: var(--fw-bold);
 }
-.NFT-card__ETH-icon [data-icon="ETH-icon"]::before {
-    content: url(images/icon-ethereum.svg);
-    width: 11;
-    height: 18;
-
+.NFT-card__Time-icon-description {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.NFT-card__ETH-icon {
+  margin: 0;
+    width: 0.825rem;
+    height: 1.3rem;
+    justify-self: flex-start;
 }
 .NFT-card__Time-icon {
     opacity: 0.7;
@@ -143,4 +157,14 @@ article * {
     margin: 0;
     color: white;
     opacity: 1;
+}
+@media (max-width:335px) {
+  .NFT-card__attribution-flex-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.875rem;
+}
 }

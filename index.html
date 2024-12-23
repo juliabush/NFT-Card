@@ -21,12 +21,18 @@
   <!-- the <i> tag is commonly used for icons, thats why im implementing it here -->
     <!-- nevermind, the <i> tag is incorrect, better to use span -->
       <div class="NFT-card__icon-flex-group">
-        <span class="NFT-card__ETH-icon" data-icon="ETH-icon">
-          0.041 ETH
-        </span>
-       <span class="NFT-card__Time-icon" data-icon="Time-icon">
+        <div class="NFT-card__ETH-icon-description">
+          <img src="images/icon-ethereum.svg" alt="Etherium 3D diamond icon" class="NFT-card__ETH-icon">
+          <span class="NFT-card__ETH-description">
+            0.041 ETH
+          </span>
+        </div>
+        <div class="NFT-card__icon-description">
+          <span class="NFT-card__Time-icon-description">
+            <img src="images/icon-clock.svg" alt="Icon of a clock ticking" class="NFT-card__Time-icon">
         3 days left
        </span>
+        </div>
       </div>
  <!-- The <hr> tag creates a horizontal line -->
  <hr class="NFT-card__line-break">
